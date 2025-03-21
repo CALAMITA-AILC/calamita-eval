@@ -33,16 +33,21 @@ module load cuda/12.3
 
 echo Evaluating model $MODEL on tasks from $2:
 tasks=$(cat $2 | tr '\n' ',' | sed 's/,$//')
+echo "Total tasks: $(echo $tasks | tr ',' '\n' | wc -l)"
+echo "Tasks:"
 echo $tasks
 
 NUM_GPUS=$SLURM_GPUS_PER_NODE
-NUM_GPUS=2
+echo "NUM_GPUS: $NUM_GPUS"
 
-accelerate launch \
-    --num_machines 1 \
-    --num_processes $NUM_GPUS \
-    -m lm_eval --model hf \
-    --model_args pretrained=${MODEL},dtype=float16,parallelize=True \
+# accelerate launch \
+    # --num_machines 1 \
+    # --num_processes 1 \
+    # -m 
+# lm_eval --model lm \
+#     --model_args pretrained=${MODEL},dtype=float16,parallelize=True \
+lm_eval --model vllm \
+    --model_args pretrained=${MODEL},dtype=float16,tensor_parallel_size=$NUM_GPUS,gpu_memory_utilization=0.9,max_model_len=2048 \
     --tasks ${tasks} \
     --output_path ${OUTPUT_DIR} \
     --batch_size $BATCH_SIZE \
