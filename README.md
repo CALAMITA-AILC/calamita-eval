@@ -1,5 +1,12 @@
 # CALAMITA Evaluation
 
+<div style="max-width: 512px;">
+  <img src="/docs/img/logo_calamita.png" alt="CALAMITA LOGO" style="width: 100%; height: auto;">
+</div>
+
+[![Paper](https://img.shields.io/badge/Paper-CLiC%20IT-red)](https://clic2024.ilc.cnr.it/wp-content/uploads/2024/12/116_calamita_preface_long.pdf)
+[![Leaderboard](https://img.shields.io/badge/Leaderboard-live-yellow)](https://calamita-ailc.github.io/calamita2024/)
+
 This repository contains scripts and utilities to run and reproduce the CALAMITA results.
 
 ## Getting started
