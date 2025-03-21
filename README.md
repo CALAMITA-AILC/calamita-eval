@@ -1,7 +1,7 @@
 # CALAMITA Evaluation
 
 <div style="max-width: 64px;">
-  <img src="/img/logo_calamita.png" alt="CALAMITA LOGO" style="width: 100%; height: auto;">
+  <img src="/img/logo_calamita.png" alt="CALAMITA LOGO" style="width: 40%; height: auto;">
 </div>
 
 [![Paper](https://img.shields.io/badge/Paper-CLiC%20IT-red)](https://clic2024.ilc.cnr.it/wp-content/uploads/2024/12/116_calamita_preface_long.pdf)
