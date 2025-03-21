@@ -1,6 +1,6 @@
 # CALAMITA Evaluation
 
-<div style="max-width: 512px;">
+<div style="max-width: 64px;">
   <img src="/img/logo_calamita.png" alt="CALAMITA LOGO" style="width: 100%; height: auto;">
 </div>
 
