@@ -1,0 +1,9 @@
+include: base.yaml
+dataset_kwargs:
+  data_files:
+    train: ./private_data/blm-IT/task_data/BLM-CausIt_type-III/train.json
+    test: ./private_data/blm-IT/task_data/BLM-CausIt_type-III/test.json
+task: blm_caus2_1shots
+
+fewshot_split: train
+num_fewshot: 1

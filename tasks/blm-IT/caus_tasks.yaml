@@ -1,0 +1,8 @@
+group: caus_tasks
+task:
+  - blm_caus1_0shots
+  - blm_caus2_0shots
+  - blm_caus1_1shots
+  - blm_caus2_1shots
+metadata:
+  version: 1.0

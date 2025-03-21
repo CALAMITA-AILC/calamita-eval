@@ -1,0 +1,9 @@
+include: base.yaml
+dataset_kwargs:
+  data_files:
+    train: ./private_data/blm-IT/task_data/BLM-OdIt_type-II/train.json
+    test: ./private_data/blm-IT/task_data/BLM-OdIt_type-II/test.json
+task: blm_od1_1shots
+
+fewshot_split: train
+num_fewshot: 1

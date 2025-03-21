@@ -1,0 +1,8 @@
+group: agr_tasks
+task:
+  - blm_agr1_0shots
+  - blm_agr2_0shots
+  - blm_agr1_1shots
+  - blm_agr2_1shots
+metadata:
+  version: 1.0

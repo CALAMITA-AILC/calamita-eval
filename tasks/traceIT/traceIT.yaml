@@ -1,0 +1,21 @@
+tag:
+  - multiple choice
+  - correlation
+  - linguistics
+  - reading
+dataset_path: 'DominiqueBrunato/TRACE-it_CALAMITA'
+dataset_name: null
+dataset_kwargs: null
+task: traceIT
+doc_to_text: !function utils.doc_to_text
+doc_to_choice: ['sì', 'no']
+doc_to_target: Gold
+training_split: null
+validation_split: null
+test_split: train
+output_type: multiple_choice
+metric_list:
+  - metric: acc
+  - metric: f1
+metadata:
+  version: 1.0
