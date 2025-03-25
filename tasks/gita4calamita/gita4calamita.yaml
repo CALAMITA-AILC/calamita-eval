@@ -5,3 +5,11 @@ task:
   - story_class
 metadata:
   version: 1.0
+
+# this tasks NEED to be run in the following order:
+# story_class
+# conflict_detect
+# physical_state
+# the first two subclass will produce a .json file
+# it's FUNDAMENTAL for the next subtasks.
+# can be safely deleted after completition of all tasks

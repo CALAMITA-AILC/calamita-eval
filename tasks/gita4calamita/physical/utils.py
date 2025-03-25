@@ -1,19 +1,4 @@
-def doc_to_text_story(doc):
-    PRE_PROMPT = "The story is as follows:"
-    POST_PROMPT = "Is the story plausible?"
-    
-    instance = "Please read the following story and answer if the story is plausible taking into account the order of the events. Please answer with true or false.\n"
-    instance += PRE_PROMPT + "\n"
-
-    for sentence in doc["sentences"]:
-        instance += f'{sentence} '
-
-    instance += "\n"
-    instance += POST_PROMPT
-
-    return instance
-
-def doc_to_text_physical(doc):
+def doc_to_text(doc):
     PRE_PROMPT = "The story is as follows: "
     POST_PROMPT = "The physical state that causes the conflict in the implausible story is: "
 
@@ -28,28 +13,15 @@ def doc_to_text_physical(doc):
 
     return instance
 
-def doc_to_text_conflict(doc):
-    PRE_PROMPT = "The story is as follows: "
-    POST_PROMPT = "The conflicting sentence and the breakpoint are:"
-
-    instance = "The following story is implausible. Identify the breakpoint, and then select the sentence responsible for the implausibility. Please identify the breakpoint sentence and the conflicting sentence.\n"
-    instance += PRE_PROMPT + "\n"
-
-    for i, sentence in enumerate(doc["sentences"]):
-        instance += f'{i}. {sentence}\n'
-
-    instance += "\n"
-    instance += POST_PROMPT
-
-    return instance
-
-def doc_to_target_conflict(doc):
-    return f"{doc['confl_sents'][0]} and {doc['breakpoint']}"
-
-def preprocess_dataset_physical(dataset):
-    dataset = dataset.select([i for i in range(len(dataset)) if not dataset[i]["plausible"]])      # selecting 4 rows for DEBUG
-    return dataset
-
-def preprocess_dataset_conflict(dataset):
-    dataset = dataset.select([i for i in range(len(dataset)) if dataset[i]["breakpoint"] != -1])      # selecting 4 rows for DEBUG
+def preprocess_dataset(dataset):
+    import json
+    with open('gita_conflict_results.json') as file:
+      story_results = json.load(file)
+    # story results contains the accuracy from the previous step
+    # the order of the task is the same
+    #dataset = dataset.select([i for i in range(10)])
+    print(dataset)
+    dataset = dataset.filter(lambda example, idx: story_results[idx], with_indices=True)
+    print(dataset)
+    dataset = dataset.select([i for i in range(len(dataset)) if not dataset[i]["plausible"]])
     return dataset
