@@ -2,7 +2,7 @@ def doc_to_text(doc):
     PRE_PROMPT = "The story is as follows: "
     POST_PROMPT = "The conflicting sentence and the breakpoint are:"
 
-    instance = "The following story is implausible. Identify the breakpoint, and then select the sentence responsible for the implausibility. Please identify the breakpoint sentence and the conflicting sentence.\n"
+    instance = ""
     instance += PRE_PROMPT + "\n"
 
     for i, sentence in enumerate(doc["sentences"]):

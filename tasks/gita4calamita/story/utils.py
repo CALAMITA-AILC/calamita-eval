@@ -2,7 +2,7 @@ def doc_to_text(doc):
     PRE_PROMPT = "The story is as follows:"
     POST_PROMPT = "Is the story plausible?"
     
-    instance = "Please read the following story and answer if the story is plausible taking into account the order of the events. Please answer with true or false.\n"
+    instance = ""
     instance += PRE_PROMPT + "\n"
 
     for sentence in doc["sentences"]:

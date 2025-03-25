@@ -6,6 +6,7 @@ output_type: multiple_choice
 training_split: null
 validation_split: null
 test_split: test
+num_fewshot: 3
 fewshot_split: test
 process_docs: !function utils.preprocess_dataset
 doc_to_text: !function utils.doc_to_text
