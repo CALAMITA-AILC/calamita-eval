@@ -17,40 +17,102 @@ def doc_to_target(doc):
     return f"{doc['confl_sents'][0]} and {doc['breakpoint']}"
 
 def preprocess_dataset(dataset):
+    
     import json
-    with open('gita_story_results.json') as file:
+    with open('gita_story_data.json', "r") as file:
       story_results = json.load(file)
-    # story results contains the accuracy from the previous step
-    # the order of the task is the same
-    #dataset = dataset.select([i for i in range(10)])
-    print(dataset)
-    dataset = dataset.filter(lambda example, idx: story_results[idx], with_indices=True)
-    print(dataset)
-    dataset = dataset.select([i for i in range(len(dataset)) if dataset[i]["breakpoint"] != -1])
+    well_classified = set(story_results["well_classified"])
+    dataset = dataset.filter(lambda x: x["example_id"] in well_classified)
+    dataset = dataset.filter(lambda x: x["breakpoint"] != -1) # filter out plausible instances
+
     return dataset
+
+def label_2_id(label):
+
+    return {
+        "0 and 1": 0,
+        "2 and 4": 1,
+        "1 and 2": 2,
+        "0 and 4": 3,
+        "3 and 4": 4,
+        "0 and 3": 5,
+        "1 and 4": 6,
+        "2 and 3": 7,
+        "0 and 2": 8,
+        "1 and 3": 9
+    }[label]
+
+def process_results(doc, results):
+    import numpy as np
+    target_label = doc_to_target(doc)
+    target_id = label_2_id(target_label)
+
+    lls, is_greedy = zip(*results)
+    pred = np.argmax(lls)
+    acc = float(pred == target_id)
+
+    acc_idx = f"{acc}_{doc['example_id']}"
+
+    return_dict =  {"consistency": acc_idx, "consistency_cloze": None, "consistency_order": None}
+
+    if doc["type"] == "cloze":
+        return_dict["consistency_cloze"] = acc
+    elif doc["type"] == "order":
+        return_dict["consistency_order"] = acc
+
+    return return_dict
 
 def mean(items):
     import json
-    print(items)
-    # items -> [1.0,0.0,1.0]
-    '''
-    Il task "gita4calamita" prevede il salvataggio dei risultati ottenuti dall'esecuzione di questo task (conflict) affinchè questi possano essere usati nei task successivi. Il codice seguente salva i risultati nel file temporaneo "gita_conflict_results.json"
-    '''
-    with open('gita_story_results.json') as file:
-      story_results = json.load(file)
+    with open('gita_story_data.json', "r") as file:
+        story_data = json.load(file)
 
-    indice_conflict_results = 0
-    for i in range(len(story_results)):
-      if story_results[i]:
-        if items[indice_conflict_results]:
-          pass
-        else:
-          story_results[i] = 0
-        indice_conflict_results += 1
+    num_non_plausibles = story_data["num_non_plausibles"]
 
-    print(indice_conflict_results == len(items))
-    print(story_results)
+    conflict_well_classified = []
+    acc_values = []
+    for i in range(len(items)):
+        acc_value = float(items[i].split("_")[0])
+        instance_id = items[i].split("_")[1]
+        if acc_value == 1.0:
+            conflict_well_classified.append(instance_id)
+        acc_values.append(acc_value)
 
-    with open("gita_conflict_results.json","w") as conflict:
-      json.dump(story_results, conflict, indent=4)
-    return sum(items)/len(items)
+    with open("gita_conflict_data.json","w") as conflict:
+      story_data["well_classified"] = conflict_well_classified
+      json.dump(story_data, conflict, indent=4)
+    if len(acc_values) == 0:
+        return 0
+    return sum(acc_values)/num_non_plausibles
+
+def mean_cloze(items):
+    import json
+    with open('gita_story_data.json', "r") as file:
+        story_data = json.load(file)
+
+    num_cloze = story_data["num_cloze"]
+    
+    cloze_items = []
+    for i in range(len(items)):
+        if items[i] is not None:
+            cloze_items.append(items[i])
+    if len(cloze_items) == 0:
+        return 0
+    return sum(cloze_items)/num_cloze
+
+def mean_order(items):
+    import json
+    with open('gita_story_data.json', "r") as file:
+        story_data = json.load(file)
+
+    num_order = story_data["num_order"]
+    
+    order_items = []
+    for i in range(len(items)):
+        if items[i] is not None:
+            order_items.append(items[i])
+    if len(order_items) == 0:
+        return 0
+    return sum(order_items)/num_order
+    
+    

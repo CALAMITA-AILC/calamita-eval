@@ -4,7 +4,7 @@ task:
   - conflict_detect
   - story_class
 metadata:
-  version: 1.0
+  version: 2.0
 
 # this tasks NEED to be run in the following order:
 # story_class
@@ -13,3 +13,7 @@ metadata:
 # the first two subclass will produce a .json file
 # it's FUNDAMENTAL for the next subtasks.
 # can be safely deleted after completition of all tasks
+# P.S. the files could be made more unique adding the PID
+# of the evaluation process, as to make possible parallel
+# evaluations. As of now, IT'S IMPOSSIBLE TO DO PARALLEL
+# EVALUATIONS as they would overwrite each others files.

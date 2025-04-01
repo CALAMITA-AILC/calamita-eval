@@ -9,12 +9,19 @@ test_split: test
 num_fewshot: 3
 fewshot_split: test
 process_docs: !function utils.preprocess_dataset
+process_results: !function utils.process_results
 doc_to_text: !function utils.doc_to_text
 doc_to_target: states
 doc_to_choice: ["power", "location", "exist", "clean", "edible", "wet", "functional", "wearing", "open", "conscious", "temperature", "solid", "occupied", "in pieces"]
 metric_list:
-  - metric: acc
-    aggregation: mean
+  - metric: verifiability
+    aggregation: !function utils.mean
+    higher_is_better: true
+  - metric: verifiability_cloze
+    aggregation: !function utils.mean_cloze
+    higher_is_better: true
+  - metric: verifiability_order
+    aggregation: !function utils.mean_order
     higher_is_better: true
 metadata:
   version: 1.0

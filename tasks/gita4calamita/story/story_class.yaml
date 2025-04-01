@@ -8,13 +8,23 @@ validation_split: null
 test_split: test
 num_fewshot: 3
 fewshot_split: test
-#process_docs: !function utils.preprocess_dataset
+process_docs: !function utils.preprocess_dataset
+process_results: !function utils.process_results
 doc_to_text: !function utils.doc_to_text
 doc_to_target: plausible
 doc_to_choice: ["false", "true"]
 metric_list:
-  - metric: acc
+  - metric: accuracy
     aggregation: !function utils.mean
+    higher_is_better: true
+  - metric: accuracy_plausible
+    aggregation: !function utils.mean_plausible
+    higher_is_better: true
+  - metric: accuracy_cloze
+    aggregation: !function utils.mean_cloze
+    higher_is_better: true
+  - metric: accuracy_order
+    aggregation: !function utils.mean_order
     higher_is_better: true
 metadata:
   version: 1.0
