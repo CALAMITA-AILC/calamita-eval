@@ -2,7 +2,7 @@ import datasets
 
 from typing import List
 from evaluate import load
-
+import os
 
 # bleu_metric = load("bleu")
 # chrf_metric = load("chrf")
@@ -66,6 +66,7 @@ def sigle_chrf(ref: str, pred: str) -> float:
     chrf_score = chrf_metric.compute(predictions=[pred], references=[[ref]])
     return chrf_score["score"]
 
+
 def single_bleurt(ref: str, pred: str) -> float:
     # interrupt and return lowest score
     if _check_error_input(ref):
@@ -74,9 +75,23 @@ def single_bleurt(ref: str, pred: str) -> float:
     if _check_error_input(pred):
         print(f"Error with: {pred = }")
         return 0
-    bleurt = load("bleurt", module_type="metric", checkpoint="BLEURT-20")
-    result = bleurt.compute(predictions=[pred], references=[ref])
-    return result["scores"][0]
+    
+    try:
+        from bleurt import score
+        checkpoint = os.getenv("BLEURT_CHECKPOINT")
+        bleurt_scorer = score.BleurtScorer(checkpoint)
+        bleurt_type = "official"
+    except ImportError:
+        bleurt_scorer = load("bleurt", module_type="metric", checkpoint="BLEURT-20")
+        bleurt_type = "evaluate"
+    
+    if bleurt_type == "official":    
+        scores = bleurt_scorer.score(references=[ref], candidates=[pred])
+        score = scores[0]
+    else:
+        result = bleurt_scorer.compute(predictions=[pred], references=[ref])
+        score = result["scores"][0]
+    return score
 
 def single_comet(source: str, ref: str, pred: str) -> float:
     # interrupt and return lowest score

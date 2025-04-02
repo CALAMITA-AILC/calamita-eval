@@ -17,10 +17,17 @@ export HF_HOME=$BASE_DIR/calamita/huggingface
 source venv/bin/activate
 echo "This script has to be run only once with internet access"
 
+module unload cuda
+module load cuda/12.3
+
 METRICS=( \
     bleu \
-    comet
+    comet \
+    chrf \
 )
 for metric in "${METRICS[@]}"; do
+    echo "Downloading metric ${metric}"
     python -c "from evaluate import load; load('${metric}')"
 done
+
+python -c "from evaluate import load; load("bleurt", module_type="metric", checkpoint="BLEURT-20")"

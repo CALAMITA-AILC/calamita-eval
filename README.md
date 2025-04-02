@@ -13,11 +13,13 @@ This repository contains scripts and utilities to run and reproduce the CALAMITA
 
 Create an isolated python environment and install the submodule `lm-eval-harness`.
 This repository is a fork of the official lm-eval-harness that supports running tasks on local datasets.
-
+Then, install the requirements listed under `requirements.txt`.
 
 ```bash
 pip install -e './lm-eval-harness[vllm]'
+pip install -r requirements.txt
 ```
+
 
 ### (optional) Prepare Files Locally
 
