@@ -29,18 +29,12 @@ process_results: !function utils.process_results_it_en
 
 # takes the value of the "metric" key from the dict returned by the "process_results" function
 metric_list:
-  - metric: bleu_score    # my score
-    aggregation: mean
-    higher_is_better: true
-  - metric: chrf_score    # my score
-    aggregation: mean
-    higher_is_better: true
-  - metric: bleurt_score    # my score
-    aggregation: mean
-    higher_is_better: true
-  - metric: comet_score     # my score
-    aggregation: mean
-    higher_is_better: true
+  - metric: bleu
+  - metric: chrf
+  - metric: !function utils.comet_22_da    # passthrough
+    aggregation: !function utils.comet_22_da_agg
+  - metric: !function utils.bleurt    # passthrough
+    aggregation: !function utils.bleurt_agg
 
 
 metadata:

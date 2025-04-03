@@ -11,14 +11,17 @@
 
 set -e
 
-BASE_DIR=/leonardo_work/IscrC_CALAMITA
+BASE_DIR=$FAST/ga_files
 export TOKENIZERS_PARALLELISM=false
-export HF_HOME=$BASE_DIR/calamita/huggingface
+export HF_HOME=$BASE_DIR/huggingface
 source venv/bin/activate
 echo "This script has to be run only once with internet access"
 
 MODELS=( \
     meta-llama/Llama-3.1-70B-Instruct \
+    sapienzanlp/Minerva-7B-instruct-v1.0 \
+    sapienzanlp/Minerva-7B-instruct-v1.0 \
+    meta-llama/Llama-3.1-8B-Instruct \
 )
 
 # Download models, tokenizers, and config files
