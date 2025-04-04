@@ -12,7 +12,7 @@ This repository contains scripts and utilities to run and reproduce the CALAMITA
 ## Getting started
 
 Create an isolated python environment and install the submodule `lm-eval-harness`.
-This repository is a fork of the official lm-eval-harness that supports running tasks on local datasets.
+This repository is a fork of the official lm-eval-harness that supports neat additional functionalities, e.g., running tasks on local datasets, cleaning up VRAM after generation to make room for eval code that uses LLMs, specify custom aggregation functions.
 Then, install the requirements listed under `requirements.txt`.
 
 ```bash
@@ -30,10 +30,10 @@ If your computing environment does not have internet access, use the two scripts
 
 ## Running a model on a task
 
-1. Select a list of subtasks and put them into a txt file, one per line, e.g., in a `tasks.txt`.
-2. Run the following bash, e.g.,
+1. Select a list of subtasks and put them into a txt file, one per line, e.g., in a `tasks.txt` (you can find an example file in the root directory).
+2. Schedule the job through SLURM, e.g.,
 
 ```bash
-./launch.slurm meta-llama/Llama-3.1-70B-Instruct tasks.txt
+sbatch ./bash/run_model meta-llama/Llama-3.1-70B-Instruct tasks.txt
 ```
 
