@@ -1,0 +1,10 @@
+group: dimmi
+task:
+  - dimmi-global
+  - dimmi-p1-molecule
+  - dimmi-p1-usage
+  - dimmi-p1-drug_interaction
+  - dimmi-p1-posology
+  - dimmi-p1-side_effect
+metadata:
+  version: 1.0
