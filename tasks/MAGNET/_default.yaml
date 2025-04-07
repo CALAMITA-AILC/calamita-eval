@@ -1,0 +1,11 @@
+generation_kwargs:
+  do_sample: false
+  until:
+  - '<|eot_id|>'
+  - '<|eom_id|>'
+  - '<|end_of_text|>'
+  - </s>
+  - <|im_end|>
+  - '\n\n'
+
+target_delimiter: '\n'

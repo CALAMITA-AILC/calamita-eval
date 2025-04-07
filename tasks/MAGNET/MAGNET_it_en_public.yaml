@@ -1,8 +1,6 @@
+include: _default.yaml
 tag:
   - MAGNET_task
-#   - english
-#   - italian
-#   - calamita
 task: MAGNET_it_en_public
 dataset_path: FBK-MT/MAGNETbenchmark4CALAMITA24
 training_split: null

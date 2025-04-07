@@ -8,5 +8,3 @@ task:
   - MAGNET_UK_it_en_private
   - MAGNET_US_en_it_private
   - MAGNET_US_it_en_private
-metadata:
-  version: 1.0
