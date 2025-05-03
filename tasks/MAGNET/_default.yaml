@@ -1,11 +1,12 @@
-generation_kwargs:
-  do_sample: false
-  until:
-  - '<|eot_id|>'
-  - '<|eom_id|>'
-  - '<|end_of_text|>'
-  - </s>
-  - <|im_end|>
-  - '\n\n'
+output_type: generate_until
 
-target_delimiter: '\n'
+target_delimiter: ''
+
+# takes the value of the "metric" key from the dict returned by the "process_results" function
+metric_list:
+  - metric: bleu
+  - metric: chrf
+  - metric: !function utils.comet_22_da    # passthrough
+    aggregation: !function utils.comet_22_da_agg
+  - metric: !function utils.bleurt    # passthrough
+    aggregation: !function utils.bleurt_agg

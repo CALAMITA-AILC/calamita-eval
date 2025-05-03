@@ -170,6 +170,8 @@ def process_results(doc, results, src_col, ref_col):
     """
 
     completion = results[0]
+    completion = completion.strip("<>")
+
     model_input, reference_out = doc[src_col], doc[ref_col]
     items = [reference_out, completion, model_input]
     items = [
@@ -193,7 +195,7 @@ def bleurt_agg(items):
     import torch
 
     config = BleurtConfig.from_pretrained("lucadiliello/BLEURT-20")
-    model = BleurtForSequenceClassification.from_pretrained("lucadiliello/BLEURT-20")
+    model = BleurtForSequenceClassification.from_pretrained("lucadiliello/BLEURT-20", device_map="auto")
     tokenizer = BleurtTokenizer.from_pretrained("lucadiliello/BLEURT-20")
     model.eval()
 

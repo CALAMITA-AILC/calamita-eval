@@ -17,22 +17,13 @@ doc_to_text: "\
   <The JAS 39C Gripen crashed onto a runway at around 9:30 am local time (0230 UTC) and exploded, closing the airport to commercial flights.>\n\n\
   Translate the following sentence into English: <L'identificazione del pilota ha rivelato che si trattava del capo squadriglia Dilokrit Pattavee.>\n\
   <The pilot was identified as Squadron Leader Dilokrit Pattavee.>\n\n\
-  Translate the following sentence into English: <{{italian}}>"
+  Translate the following sentence into English: <{{italian}}>\n"
 
 # output model
 doc_to_target: "{{english}}"
 
 process_docs: !function utils.preprocess_dataset
 process_results: !function utils.process_results_it_en
-
-# takes the value of the "metric" key from the dict returned by the "process_results" function
-metric_list:
-  - metric: bleu
-  - metric: chrf
-  - metric: !function utils.comet_22_da    # passthrough
-    aggregation: !function utils.comet_22_da_agg
-  - metric: !function utils.bleurt    # passthrough
-    aggregation: !function utils.bleurt_agg
 
 
 metadata:
