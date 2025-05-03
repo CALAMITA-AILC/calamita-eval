@@ -33,9 +33,10 @@ gattina:
 - gattina-ansa
 - gattina-galileo
 geese:
-- geese_dummy
-- geese_human
-- geese_llama3
+- geese_anon_anita
+- geese_anon_dummy
+- geese_anon_gold
+- geese_anon_llama
 - geese_noexp
 gfg:
 - gfg_task_1_1
