@@ -66,26 +66,28 @@ ita-sense:
 - ita-sense-ml-no-translation
 - ita-sense-ml-with-translation
 itaeval:
-- ami_2020_aggressiveness
-- ami_2020_misogyny
-- arc_challenge_ita
-- arc_easy_ita
-- belebele_ita
-- gente_rephrasing
-- haspeede2_hs
-- haspeede2_stereo
-- hellaswag_ita
-- honest_ita
-- ironita_irony
-- ironita_sarcasm
+# Natural Language Understanding
 - itacola
+- belebele_ita
 - news_sum_fanpage
 - news_sum_ilpost
+- ironita_irony
+- ironita_sarcasm
 - sentipolc
-- squad_it
-- truthfulqa_gen_ita
-- truthfulqa_mc1_ita
+# Factual and Commonsense Knowledge
 - truthfulqa_mc2_ita
+- arc_challenge_ita
+- squad_it
+- xcopa_it
+- hellaswag_ita
+# Bias, Fairness
+- haspeede2_hs
+- haspeede2_stereo
+- hatecheck_ita
+- ami_2020_misogyny
+- ami_2020_aggressiveness
+- honest_ita
+- gente_rephrasing
 MAGNET:
 - MAGNET_IT_en_it_private
 - MAGNET_IT_it_en_private
