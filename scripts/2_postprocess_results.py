@@ -66,7 +66,7 @@ def process_results_file(f):
 
 model_results = defaultdict(dict)
 for model in model_config.keys():
-    for f in glob.glob(os.path.join(results_dir, model, "results*")):
+    for f in sorted(glob.glob(os.path.join(results_dir, model, "results*"))):
         model_results[model].update(process_results_file(f))
         
 # flatten the list of list of task names from values of each entry in task_config
