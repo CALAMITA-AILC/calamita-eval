@@ -47,7 +47,7 @@ If you do not use SLURM, the file `./bash/run_model.sh` requires minimal adaptat
 All task configurations are stored under `./tasks` in a separate folder. Each task can be composed of multiple subtasks, listed in a `group` key. For example, Eureka Rebus (`./tasks/eureka_rebus/defaul.yaml`) is composed of `eureka_original` and `eureka_hints` subtasks.
 You can specify a single subtask or a group name, which will schedule all subtasks belonging to it. 
 
-For example, to run Eureka Rebus and Abricot, including all their subtasks, create a text file as:
+Most tasks will be run as standard lm-eval tasks, using their names as keys as defined in the configuration file. For example, to run Eureka Rebus and Abricot, including all their subtasks, create a text file as:
 ```txt
 abricot
 eureka_rebus
