@@ -16,7 +16,7 @@ This repository contains scripts and utilities to run and reproduce the CALAMITA
 
 Create an isolated Python environment and install the submodule `lm-eval-harness`. We use a fork of the official lm-eval-harness offering additional functionalities, including local dataset loading, cleaning up VRAM after generation to make room for eval code that uses LLMs, and specifying custom aggregation functions. Then, install the requirements listed under `requirements.txt`.
 
-Assuming your environment is a virtualev/uv environment called `venv`, the commands after the env creation should resemble:
+Assuming your environment is a virtualenv/uv environment called `venv`, the commands after the env creation should resemble:
 
 ```bash
 source venv/bin/activate
