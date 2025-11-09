@@ -1,0 +1,18 @@
+tag:
+  - medicine
+  - information extraction
+dataset_path: RafaMann/DIMMI
+dataset_name: dimmi_600
+process_docs: !function utils.preprocess_dataset
+test_split: train
+validation_split: null
+task: dimmi-p1-usage
+doc_to_text: "Utilizzando questo testo {{text}} come riferimento, rispondi alla seguente domanda: Per cosa si usa {drug_name}? Rispondi esclusivamente nel seguente formato senza aggiungere altro testo: usage: ['indicazione1', 'indicazione2', ...]"
+doc_to_target: !function utils.global_prompt
+
+metric_list:
+  - metric: !function utils.usage
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 1.0

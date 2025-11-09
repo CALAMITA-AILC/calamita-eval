@@ -1,0 +1,30 @@
+task: gita_story_class
+description: "Please read the following story and answer if the story is plausible taking into account the order of the events. Please answer with true or false.\n\n\n"
+dataset_path: juletxara/GITA4CALAMITA
+dataset_name: default
+output_type: multiple_choice
+training_split: null
+validation_split: null
+test_split: test
+num_fewshot: 3
+fewshot_split: test
+process_docs: !function utils.preprocess_dataset
+process_results: !function utils.process_results
+doc_to_text: !function utils.doc_to_text
+doc_to_target: plausible
+doc_to_choice: ["false", "true"]
+metric_list:
+  - metric: accuracy
+    aggregation: !function utils.mean
+    higher_is_better: true
+  - metric: accuracy_plausible
+    aggregation: !function utils.mean_plausible
+    higher_is_better: true
+  - metric: accuracy_cloze
+    aggregation: !function utils.mean_cloze
+    higher_is_better: true
+  - metric: accuracy_order
+    aggregation: !function utils.mean_order
+    higher_is_better: true
+metadata:
+  version: 1.0

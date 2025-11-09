@@ -1,0 +1,33 @@
+tag:
+  - medicine
+  - information extraction
+dataset_path: RafaMann/DIMMI
+dataset_name: dimmi_600
+process_docs: !function utils.preprocess_dataset
+test_split: train
+validation_split: null
+task: dimmi-global
+doc_to_text: "Utilizzando questo testo {{text}} come riferimento, estrai le seguenti informazioni: - molecola - interazioni con altri medicinali - uso - posologia  - effetti collaterali Rispondi esclusivamente nel seguente formato senza aggiungere altro testo: molecule: ['molecola1', 'molecola2', ...] drug_interaction: ['interazione1', 'interazione2', ...] usage: ['indicazione1', 'indicazione2', ...] posology: ['dosaggio1', 'dosaggio2', ...] side_effect: ['effetto collaterale1', 'effetto collaterale2', ...] "
+doc_to_target: !function utils.global_prompt
+
+metric_list:
+  - metric: !function utils.overall_f1
+    aggregation: mean
+    higher_is_better: true
+  - metric: !function utils.molecule
+    aggregation: mean
+    higher_is_better: true 
+  - metric: !function utils.usage
+    aggregation: mean
+    higher_is_better: true
+  - metric: !function utils.side_effect
+    aggregation: mean
+    higher_is_better: true
+  - metric: !function utils.posology
+    aggregation: mean
+    higher_is_better: true
+  - metric: !function utils.drug_interaction
+    aggregation: mean
+    higher_is_better: true    
+metadata:
+  version: 1.0

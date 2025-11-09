@@ -1,0 +1,16 @@
+dataset_path: loregreg/MACID
+dataset_name: default
+task: macid
+doc_to_text: "In questo task ti verranno proposte quattro frasi che descrivono azioni fisiche. Tre di queste azioni sono dello stesso tipo, mentre una è di un tipo diverso. Individua la frase che descrive l’azione di tipo diverso. Esiste solo una risposta esatta, rispondi utilizzando esclusivamente il numero di riferimento della frase e nient'altro. 1) {{s1}} 2) {{s2}} 3) {{s3}} 4) {{s4}} Intruso: "
+doc_to_choice: ["1", "2", "3", "4"]
+doc_to_target: intruder
+training_split: null
+validation_split: null
+test_split: default
+output_type: multiple_choice
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 1.0
