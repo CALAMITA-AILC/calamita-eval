@@ -9,6 +9,11 @@
 [![Leaderboard](https://img.shields.io/badge/Leaderboard-live-yellow)](https://calamita-ailc.github.io/calamita2024/)
 -->
 
+> [!NOTE]
+> <img src="img/news.gif" align="right" width=100 height=100>
+> <big>News: The Calamita's leaderboard is public!</big>
+> [Click here](results/results.md) to see it
+
 
 This repository contains scripts and utilities to run and reproduce the CALAMITA results.
 
