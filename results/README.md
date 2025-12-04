@@ -1,11 +1,6 @@
 # Leaderboard
 <br>
 
-> [!NOTE]
-> <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Italian_traffic_signs_-_lavori.svg" align="right" height=75 width=75>
-> This leaderboard contains all the results published on the Calamita's paper.
-> We are still working on an improved interactive version, stay tuned!
-<br>
 
 | **Parent** | **Task** | **Metric** | [sapienzanlp/Minerva-7B-instruct-v1.0](https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0) | [swap-uniba/LLaMAntino-3-ANITA-8B-Inst-DPO-ITA](https://huggingface.co/swap-uniba/LLaMAntino-3-ANITA-8B-Inst-DPO-ITA) | [meta-llama/Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct) | [meta-llama/Llama-3.1-70B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct) |
 |-|-|-|-|-|-|-|
