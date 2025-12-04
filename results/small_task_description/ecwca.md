@@ -1,12 +1,9 @@
-# ECWCA
+# ECWCA [![Clit-IT paper link](../../img/clicit_paper.svg)](https://ceur-ws.org/Vol-3878/138_calamita_short.pdf)
 
+#### [Go back to the leaderboard](../README.md)
 ## Description
 
 ECWCA is designed to evaluate the knowledge and reasoning capabilities of LLMs through crossword clue-answering. The challenge consists of two tasks: a standard question-answering format where the LLM is asked to solve crossword clues and a variation where the model is given hints about the word lengths of the answers, which is expected to help models with reasoning abilities.
-
-## Links
-
-- [Paper](https://ceur-ws.org/Vol-3878/138_calamita_short.pdf)
 
 ## Authors
 

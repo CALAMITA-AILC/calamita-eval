@@ -1,13 +1,10 @@
-# EurekaRebus
+# EurekaRebus [![Clit-IT paper link](../../img/clicit_paper.svg)](https://ceur-ws.org/Vol-3878/132_calamita_long.pdf)
 
+#### [Go back to the leaderboard](../README.md)
 ## Description
 
 EurekaRebus is a task that tests the ability of LLMs to conduct multi-step, knowledge-intensive inferences while respecting predefined constraints. LLMs are prompted to reason step-by-step to solve verbalized variants of rebus games. Verbalized rebuses replace visual cues with crossword definitions to create an encrypted first pass, making the problem entirely text-based.
 Multiple metrics are used to grasp the models’ performance in knowledge recall, constraints adherence, and re-segmentation abilities across reasoning steps.
-
-## Links
-
-- [Paper](https://ceur-ws.org/Vol-3878/132_calamita_long.pdf)
 
 ## Authors
 

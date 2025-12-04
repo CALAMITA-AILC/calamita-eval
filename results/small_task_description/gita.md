@@ -1,12 +1,9 @@
-# GITA
+# GITA [![Clit-IT paper link](../../img/clicit_paper.svg)](https://ceur-ws.org/Vol-3878/127_calamita_long.pdf)
 
+#### [Go back to the leaderboard](../README.md)
 ## Description
 
 Gita investigates the physical commonsense reasoning capabilities of large language models, assessing their low-level understanding of the physical world using a test set in the Italian language. Three specific tasks are evaluated: identifying plausible and implausible stories within our dataset, identifying the conflict that generates an implau- sible story, and identifying the physical states that make a story implausible. It is written and annotated by a professional linguist.
-
-## Links
-
-- [Paper](https://ceur-ws.org/Vol-3878/127_calamita_long.pdf)
 
 ## Authors
 

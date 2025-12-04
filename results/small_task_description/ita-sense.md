@@ -1,12 +1,9 @@
-# ITA-SENSE
+# ITA-SENSE [![Clit-IT paper link](../../img/clicit_paper.svg)](https://ceur-ws.org/Vol-3878/134_calamita_short.pdf)
 
+#### [Go back to the leaderboard](../README.md)
 ## Description
 
 Ita-Sense is a task that assesses LLMs’ abilities in understanding lexical semantics through Word Sense Disambiguation. The classical Word Sense Disambiguation task is cast as a generative problem formalized as two tasks: [T1] Given a target word and a sentence in which the word occurs, generate the correct meaning definition; [T2] Given a target word and a sentence in which the word occurs, choose the correct meaning definition from a predefined set. For CALAMITA, LLMs are tested in a zero-shot setting
-
-## Links
-
-- [Paper](https://ceur-ws.org/Vol-3878/134_calamita_short.pdf)
 
 ## Authors
 

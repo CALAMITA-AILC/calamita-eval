@@ -1,12 +1,9 @@
-# PERSEID
+# PERSEID [![Clit-IT paper link](../../img/clicit_paper.svg)](https://ceur-ws.org/Vol-3878/118_calamita_long.pdf)
 
+#### [Go back to the leaderboard](../README.md)
 ## Description
 
 PERSEID considers the task of irony detection from short social media conversations collected from Twitter (X) and Reddit. Data is leveraged from MultiPICO, a recent multilin-gual dataset with disaggregated annotations and annotators’ metadata. The dataset evaluates whether prompting LLMs with additional annotators’ demographic information (gender only, age only, and the combination of the two) improves performance compared to a baseline in which only the input text is provided.
-
-## Links
-
-- [Paper](https://ceur-ws.org/Vol-3878/118_calamita_long.pdf)
 
 ## Authors
 

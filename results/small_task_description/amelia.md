@@ -1,5 +1,6 @@
-# AMELIA
+# AMELIA [![Clit-IT paper link](../../img/clicit_paper.svg)](https://ceur-ws.org/Vol-3878/124_calamita_long.pdf)
 
+#### [Go back to the leaderboard](../README.md)
 ## Description
 
 Amelia is a challenge consisting of three classification tasks in the context of argument
@@ -11,10 +12,6 @@ the second and third tasks aim at classifying the type of
 premise: legal vs factual, and its corresponding argumen-
 tation scheme. The classes are highly unbalanced, hence
 evaluation is based on the macro F1 score.
-
-## Links
-
-- [Paper](https://ceur-ws.org/Vol-3878/124_calamita_long.pdf)
 
 ## Authors
 

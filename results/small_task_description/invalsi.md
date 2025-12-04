@@ -1,5 +1,6 @@
-# INVALSI
+# INVALSI [![Clit-IT paper link](../../img/clicit_paper.svg)](https://ceur-ws.org/Vol-3878/129_calamita_long.pdf)
 
+#### [Go back to the leaderboard](../README.md)
 ## Description
 
 Invalsi is a benchmark based on the Invalsi tests
@@ -11,10 +12,6 @@ across Italy. There are two benchmarks: Invalsi MATE
 on mathematical understanding, and Invalsi ITA (1279
 questions), which evaluates language understanding in
 Italian.
-
-## Links
-
-- [Paper](https://ceur-ws.org/Vol-3878/129_calamita_long.pdf)
 
 ## Authors
 

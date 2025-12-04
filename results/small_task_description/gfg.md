@@ -1,12 +1,9 @@
-# GFG
+# GFG [![Clit-IT paper link](../../img/clicit_paper.svg)](https://ceur-ws.org/Vol-3878/122_calamita_long.pdf)
 
+#### [Go back to the leaderboard](../README.md)
 ## Description
 
 GFG s a task designed to assess and monitor the recognition and generation of gender-fair language in both mono- and cross-lingual scenarios. It includes three tasks: (1) the detection of gender-marked expressions in Italian sentences, (2) the rewriting of gendered expressions into gender-fair alternatives, and (3) the generation of gender-fair language in automatic translation from English to Italian. The challenge relies on three different annotated datasets: the GFL-it corpus, which contains Italian texts extracted from administrative documents provided by the Univer- sity of Brescia; GeNTE, a bilingual test set for gender- neutral rewriting and translation built upon a subset of the Europarl dataset; Neo-GATE, a bilingual test set de- signed to assess the use of non-binary neomorphemes in Italian for both fair formulation and translation tasks.
-
-## Links
-
-- [Paper](https://ceur-ws.org/Vol-3878/122_calamita_long.pdf)
 
 ## Authors
 

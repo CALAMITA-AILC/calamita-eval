@@ -1,12 +1,9 @@
-# GATTINA
+# GATTINA [![Clit-IT paper link](../../img/clicit_paper.svg)](https://ceur-ws.org/Vol-3878/121_calamita_long.pdf)
 
+#### [Go back to the leaderboard](../README.md)
 ## Description
 
 Gattina is a task that aims to assess the ability of LLMs to generate headlines for science news articles. Aspects such as the appropriateness of the summary, creativity, and attractiveness are evaluated through a battery of metrics. The benchmark consists of a large dataset of science news articles and their corresponding published headlines from ANSA Scienza and Galileo, two prominent Italian media outlets.
-
-## Links
-
-- [Paper](https://ceur-ws.org/Vol-3878/121_calamita_long.pdf)
 
 ## Authors
 

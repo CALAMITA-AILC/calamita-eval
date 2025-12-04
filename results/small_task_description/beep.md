@@ -1,5 +1,6 @@
-# BEEP
+# BEEP [![Clit-IT paper link](../../img/clicit_paper.svg)](https://ceur-ws.org/Vol-3878/135_calamita_short.pdf)
 
+#### [Go back to the leaderboard](../README.md)
 ## Description
 
 Beep is a benchmark to evaluate large language models in the con-
@@ -10,10 +11,6 @@ knowledge through a series of true/false questions. The
 dataset is derived from official ministerial materials used
 in the Italian licensing process, explicitly targeting Cate-
 gory B licenses.
-
-## Links
-
-- [Paper](https://ceur-ws.org/Vol-3878/135_calamita_short.pdf)
 
 ## Authors
 

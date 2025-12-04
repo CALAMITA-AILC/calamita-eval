@@ -1,5 +1,6 @@
-# ABRICOT
+# ABRICOT [![Clit-IT paper link](../../img/clicit_paper.svg)](https://ceur-ws.org/Vol-3878/128_calamita_long.pdf)
 
+#### [Go back to the leaderboard](../README.md)
 ## Description
 
 Abricot is a task designed to evaluate Italian language
@@ -15,10 +16,6 @@ texts, allowing its interpretation to vary between the
 extremes of abstractness and inclusiveness. This chal-
 lenge aims to verify how LLMs perceive subtle linguistic
 variations and their implications in natural language.
-
-## Links
-
-- [Paper](https://ceur-ws.org/Vol-3878/128_calamita_long.pdf)
 
 ## Authors
 

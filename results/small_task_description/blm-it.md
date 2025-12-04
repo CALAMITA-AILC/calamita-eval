@@ -1,5 +1,6 @@
-# BLM-It
+# BLM-It [![Clit-IT paper link](../../img/clicit_paper.svg)](https://ceur-ws.org/Vol-3878/125_calamita_long.pdf)
 
+#### [Go back to the leaderboard](../README.md)
 ## Description
 
 BLM-It is a task made of linguistic puzzles (matrices) around language-
@@ -12,10 +13,6 @@ set includes negative examples following corrupted gen-
 erating rules. The models are prompted in a few-shot
 setting. The datasets comprise a few prompts for a few-
 shot setting.
-
-## Links
-
-- [Paper](https://ceur-ws.org/Vol-3878/125_calamita_long.pdf)
 
 ## Authors
 

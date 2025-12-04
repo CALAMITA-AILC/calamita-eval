@@ -1,12 +1,9 @@
-# Magnet
+# Magnet [![Clit-IT paper link](../../img/clicit_paper.svg)](https://ceur-ws.org/Vol-3878/120_calamita_long.pdf)
 
+#### [Go back to the leaderboard](../README.md)
 ## Description
 
 MT is a task that aims at testing the ability of LLMs in automatic translation focusing on Italian and English (in both directions). The task proposes a benchmark composed of two datasets covering different domains and with varying distribution policies. Performances are reported in terms of four eval uation metrics, whose scores allow an overall evaluation of the quality of the automatically generated translations.
-
-## Links
-
-- [Paper](https://ceur-ws.org/Vol-3878/120_calamita_long.pdf)
 
 ## Authors
 
