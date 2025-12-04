@@ -121,7 +121,7 @@
 |  | ita-text-to-sql | exec_accuracy | 0.04 | 0.38 | 0.36 | **0.46** | 
 | [**TRACE-it**](small_task_description/trace-it.md)
 |  | traceIT | accuracy | 0.63 | 0.70 | 0.72 | **0.85** |
-| [**VERYf-IT**](small_task_description/verifyit)
+| [**VERYf-IT**](small_task_description/verifyit.md)
 |  | enriched | accuracy | **0.57** | 0.43 | 0.52 | 0.56 |
 |  | full | accuracy | **0.59** | 0.41 | 0.52 | **0.59** |
 |  | small | accuracy | **0.57** | 0.43 | 0.52 | 0.56 |
