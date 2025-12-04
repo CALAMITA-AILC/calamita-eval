@@ -9,7 +9,7 @@
 [![Leaderboard](https://img.shields.io/badge/Leaderboard-live-yellow)](https://calamita-ailc.github.io/calamita2024/)
 -->
 
-| :exclamation:  News: The Calamita's [leaderboard](results/results.md) is public!   |
+| :exclamation:  News: The Calamita's [leaderboard](results/README.md) is public!   |
 |----------------------------------------------|
 
 <br>
