@@ -1,19 +1,19 @@
+
 # CALAMITA Evaluation
-
-<div>
-  <img src="/img/logo_calamita.png" alt="CALAMITA LOGO" style="width: 40%; height: auto;">
-</div>
-
+<img src="/img/logo_calamita.png" alt="CALAMITA LOGO" width=300 height=300 align="right">
+<br>
+<br>
+<br>
 <!--
 [![Paper](https://img.shields.io/badge/Paper-CLiC%20IT-red)](https://clic2024.ilc.cnr.it/wp-content/uploads/2024/12/116_calamita_preface_long.pdf)
 [![Leaderboard](https://img.shields.io/badge/Leaderboard-live-yellow)](https://calamita-ailc.github.io/calamita2024/)
 -->
 
-> [!NOTE]
-> <img src="img/news.gif" align="right" width=100 height=100>
-> <big>News: The Calamita's leaderboard is public!</big>
-> [Click here](results/results.md) to see it
+| :exclamation:  News: The Calamita's [leaderboard](results/results.md) is public!   |
+|----------------------------------------------|
 
+<br>
+<br>
 
 This repository contains scripts and utilities to run and reproduce the CALAMITA results.
 
