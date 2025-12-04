@@ -7,26 +7,26 @@ Mult-IT is a large-scale Multi-Choice Question Answering (MCQA) dataset for eval
 
 ## Authors
 
-- **Matteo Rinaldi **
+- **Matteo Rinaldi**
   - Affiliation: Università di Torino
   - Email: mailto:matteo.rinaldi@unito.it
   - Website: http://mrinaldi.llmentor.org
 
-- **Jacopo Gili **
+- **Jacopo Gili**
   - Affiliation: Università di Torino
   - Email: mailto:jacopo.gili@unito.it
 
-- **Maria Francis **
+- **Maria Francis**
   - Affiliation: University of Groningen & University of Trento
 
-- **Mattia Goffetti **
+- **Mattia Goffetti**
 
-- **Viviana Patti **
+- **Viviana Patti**
   - Affiliation: Università di Torino
   - Email: mailto:viviana.patti@unito.it
   - Website: https://www.unito.it/persone/vpatti
 
-- **Malvina Nissim **
+- **Malvina Nissim**
   - Affiliation: University of Groningen
   - Email: mailto:m.nissim@rug.nl
   - Website: https://malvinanissim.github.io/

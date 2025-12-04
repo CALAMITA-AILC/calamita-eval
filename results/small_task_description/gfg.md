@@ -39,7 +39,7 @@ GFG s a task designed to assess and monitor the recognition and generation of ge
   - Affiliation: Computer Science Department, University of Turin, Turin, Italy
   - Email: chiara.ferrando@unito.it
 
-- **Viviana Patti **
+- **Viviana Patti**
   - Affiliation: Università di Torino
   - Email: mailto:viviana.patti@unito.it
   - Website: https://www.unito.it/persone/vpatti

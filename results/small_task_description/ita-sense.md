@@ -7,12 +7,12 @@ Ita-Sense is a task that assesses LLMs’ abilities in understanding lexical sem
 
 ## Authors
 
-- **Pierpaolo Basile **
+- **Pierpaolo Basile**
   - Affiliation: University of Bari Aldo Moro
   - Email: mailto:pierpaolo.basile@uniba.it
   - Website: http://www.di.uniba.it/~swap/index.php?n=Membri.Basile
 
-- **Elio Musacchio **
+- **Elio Musacchio**
   - Affiliation: Università di Bari 'Aldo Moro'
 
 - **Lucia Siciliani**

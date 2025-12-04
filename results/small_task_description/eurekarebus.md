@@ -23,7 +23,7 @@ Multiple metrics are used to grasp the models’ performance in knowledge recall
   - Email: a.bisazza@rug.nl
   - Website: https://cs.rug.nl/~bisazza
 
-- **Malvina Nissim **
+- **Malvina Nissim**
   - Affiliation: University of Groningen
   - Email: mailto:m.nissim@rug.nl
   - Website: https://malvinanissim.github.io/

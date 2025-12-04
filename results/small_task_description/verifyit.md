@@ -7,11 +7,11 @@ VerifyIT is designed to evaluate the in-memory factual knowledge of language mod
 
 ## Authors
 
-- **Jacopo Gili **
+- **Jacopo Gili**
   - Affiliation: Università di Torino
   - Email: mailto:jacopo.gili@unito.it
 
-- **Viviana Patti **
+- **Viviana Patti**
   - Affiliation: Università di Torino
   - Email: mailto:viviana.patti@unito.it
   - Website: https://www.unito.it/persone/vpatti

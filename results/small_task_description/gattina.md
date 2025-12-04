@@ -7,15 +7,15 @@ Gattina is a task that aims to assess the ability of LLMs to generate headlines 
 
 ## Authors
 
-- **Maria Francis **
+- **Maria Francis**
   - Affiliation: University of Groningen & University of Trento
 
-- **Matteo Rinaldi **
+- **Matteo Rinaldi**
   - Affiliation: Università di Torino
   - Email: mailto:matteo.rinaldi@unito.it
   - Website: http://mrinaldi.llmentor.org
 
-- **Jacopo Gili **
+- **Jacopo Gili**
   - Affiliation: Università di Torino
   - Email: mailto:jacopo.gili@unito.it
 
@@ -29,12 +29,12 @@ Gattina is a task that aims to assess the ability of LLMs to generate headlines 
   - Email: iannaccone@galileonet.it
   - Website: 
 
-- **Malvina Nissim **
+- **Malvina Nissim**
   - Affiliation: University of Groningen
   - Email: mailto:m.nissim@rug.nl
   - Website: https://malvinanissim.github.io/
 
-- **Viviana Patti **
+- **Viviana Patti**
   - Affiliation: Università di Torino
   - Email: mailto:viviana.patti@unito.it
   - Website: https://www.unito.it/persone/vpatti

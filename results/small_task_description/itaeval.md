@@ -7,11 +7,11 @@ ItaEval is a multifaceted evaluation suite com prising three overarching task ca
 
 ## Authors
 
-- **Giuseppe Attanasio **
+- **Giuseppe Attanasio**
   - Affiliation: Instituto de Telecomunicações, Lisbon
   - Website: https://gattanasio.cc/
 
-- **Pieter Delobelle **
+- **Pieter Delobelle**
 
 - **Moreno La Quatra**
   - Affiliation: Kore University of Enna, Enna, Italy
