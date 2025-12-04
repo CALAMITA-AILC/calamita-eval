@@ -1,17 +1,24 @@
 
 # CALAMITA Evaluation
 <img src="/img/logo_calamita.png" alt="CALAMITA LOGO" width=300 height=300 align="right">
-<br>
-<br>
-<br>
+
+
+
 <!--
 [![Paper](https://img.shields.io/badge/Paper-CLiC%20IT-red)](https://clic2024.ilc.cnr.it/wp-content/uploads/2024/12/116_calamita_preface_long.pdf)
 [![Leaderboard](https://img.shields.io/badge/Leaderboard-live-yellow)](https://calamita-ailc.github.io/calamita2024/)
 -->
 
-| :exclamation:  News: The Calamita's [leaderboard](results/README.md) is public!   |
-|----------------------------------------------|
+<br>
 
+| | |
+|---|---|
+| <img src="img/news.gif" height="75" width="75"> | **News:** The Calamita's [leaderboard](results/README.md) is public! |
+| <img src="img/wip.svg" height="75" width="75"> | We are still working on the official Calamita's website, stay tuned! |
+| <img src="img/paper.gif" height="75" width="75"> | The paper is available on ArXiv |
+
+
+<br>
 <br>
 <br>
 
