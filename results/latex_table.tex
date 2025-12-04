@@ -1,0 +1,198 @@
+\bigskip
+
+
+{\small 
+\noindent
+\textbf{Table A.1}\smallskip\\
+Summary of results across all \textsc{CALAMITA} challenges. Each row reports the models’ average performance on the corresponding task.}%, allowing an overall comparison of LLMs’ capabilities across linguistic, factual, and reasoning benchmarks in Italian.}
+\vspace{-1em}
+\begin{footnotesize}
+\begin{longtable}{llcccccc}
+%\caption{Summary of results across all \textsc{CALAMITA} challenges. Each row reports the models’ average performance on the corresponding task, allowing an overall comparison of LLMs’ capabilities across linguistic, factual, and reasoning benchmarks in Italian.}\\
+\toprule
+\textbf{Parent} & \textbf{Task} & \textbf{Metric} & \textsc{M} & \textsc{A} & \textsc{L8B} & \textsc{L70B} \\
+\endfirsthead
+
+\multicolumn{7}{c}{{\bfseries Table \thetable\ continued from previous page}} \\
+\toprule
+\textbf{Parent} & \textbf{Task} & \textbf{Metric} & \textsc{M} & \textsc{A} & \textsc{L8B} & \textsc{L70B} \\
+\midrule
+\endhead
+
+\bottomrule
+\endfoot
+\endlastfoot
+\midrule
+\multirow{2}{*}{ABRICOT} & abs & pearson & -0.03 & 0.50 & 0.29 & 0.44 \\
+ & inc & pearson & -0.20 & 0.14 & 0.18 & \textbf{0.25} \\
+
+% \midrule
+% \multirow{6}{*}{\textsc{AMELIA}} & arg-component-fewshot & f1 & 0.30 & 0.36 & 0.33 &  \textbf{0.56} \\
+%  & arg-component-zeroshot & f1 & 0.29 & 0.37 & 0.21 & \textbf{0.47} \\
+%  & arg-premisetype-fewshot & f1 & 0.13 & 0.80 & 0.74 & \textbf{0.86} \\
+%  & arg-premisetype-zeroshot & f1 & 0.36 & 0.72 & 0.39 & \textbf{0.85} \\
+%  & arg-scheme-fewshot & f1 & 0.27 & 0.50 & 0.35 & \textbf{0.55} \\
+%  & arg-scheme-zeroshot & f1 & 0.06 & 0.36 & 0.31 & \textbf{0.50} \\
+
+\midrule
+\multirow{6}{*}{\textsc{AMELIA}} 
+ & arg-component-fewshot      & f1 & 0.23 & 0.41 & 0.48 & \textbf{0.86} \\
+ & arg-component-zeroshot     & f1 & 0.00 & 0.44 & 0.47 & \textbf{0.71} \\
+ & arg-premisetype-fewshot    & f1 & 0.48 & 0.60 & 0.74 & \textbf{0.86} \\
+ & arg-premisetype-zeroshot   & f1 & 0.57 & 0.57 & 0.39 & \textbf{0.85} \\
+ & arg-scheme-fewshot         & f1 & 0.27 & 0.28 & 0.42 & \textbf{0.57} \\
+ & arg-scheme-zeroshot        & f1 & 0.16 & 0.21 & 0.34 & \textbf{0.42} \\
+
+\midrule
+\multirow{1}{*}{BEEP} & beep & accuracy & 0.52 & 0.62 & 0.65 & \textbf{0.84} \\
+
+\midrule
+\multirow{12}{*}{BLM-It} & agr1\_0shots & f1 & 0.03 & 0.14 & 0.10 & \textbf{0.33} \\
+ & agr1\_1shots & f1 & 0.07 & 0.18 & 0.26 & \textbf{0.41} \\
+ & agr2\_0shots & f1 & 0.02 & 0.20 & 0.11 & \textbf{0.35} \\
+ & agr2\_1shots & f1 & 0.09 & 0.30 & 0.24 & \textbf{0.41} \\
+ & caus1\_0shots & f1 & 0.03 & 0.05 & 0.05 & \textbf{0.09} \\
+ & caus1\_1shots & f1 & 0.09 & 0.08 & 0.13 & \textbf{0.18} \\
+ & caus2\_0shots & f1 & 0.03 & 0.07 & 0.06 & \textbf{0.08} \\
+ & caus2\_1shots & f1 & 0.09 & 0.12 & 0.13 & \textbf{0.19} \\
+ & od1\_0shots & f1 & 0.03 & 0.06 & 0.06 & \textbf{0.07} \\
+ & od1\_1shots & f1 & 0.09 & 0.09 & 0.13 & \textbf{0.27} \\
+ & od2\_0shots & f1 & 0.03 & 0.06 & 0.06 & \textbf{0.07} \\
+ & od2\_1shots & f1 & 0.10 & 0.10 & 0.12 & \textbf{0.20} \\
+
+% \midrule
+% \multirow{6}{*}{DIMMI} & global & accuracy & 0.00 & 0.31 & 0.29 & \textbf{0.34} \\
+%  & p1-drug\_interaction & accuracy & 0.00 & 0.11 & 0.35 & \textbf{0.39} \\
+%  & p1-molecule & accuracy & 0.00 & 0.64 & 0.85 & \textbf{0.87} \\
+%  & p1-posology & accuracy & 0.00 & 0.01 & 0.06 & \textbf{0.18} \\
+%  & p1-side\_effect & accuracy & 0.00 & 0.06 & 0.02 & \textbf{0.15} \\
+%  & p1-usage & accuracy & 0.00 & 0.08 & 0.17 & \textbf{0.19} \\
+
+\midrule
+\multirow{6}{*}{DIMMI} 
+ & global               & accuracy & 0.07 & \textbf{0.34} & 0.31 & \textbf{0.34} \\
+ & p1-molecule          & accuracy & 0.01 & 0.64 & 0.86 & \textbf{0.87} \\
+ & p1-usage             & accuracy & 0.08 & 0.12 & \textbf{0.19} & \textbf{0.19} \\
+ & p1-drug\_interaction & accuracy & 0.12 & 0.21 & \textbf{0.43} & {0.39} \\
+ & p1-posology          & accuracy & 0.17 & 0.16 & 0.17 & \textbf{0.18} \\
+ & p1-side\_effect      & accuracy & 0.01 & 0.07 & \textbf{0.16} & {0.15} \\
+ & p2-molecule          & 0.00 & 0.84 & 0.76 & 0.87 \\
+ & p2-usage             & 0.07 & 0.15 & \textbf{0.22} & 0.16 \\
+ & p2-drug\_interaction & 0.11 & 0.45 & 0.36 & \textbf{0.40} \\
+ & p2-posology          & 0.16 & 0.14 & 0.15 & \textbf{0.20} \\
+ & p2-side\_effect      & 0.00 & 0.08 & 0.05 & \textbf{0.06} \\
+\midrule
+\multirow{2}{*}{ECWCA} & hint & f1 & 0.52 & 0.10 & 0.42 & \textbf{0.67} \\
+ & no-hint & f1 & 0.54 & 0.08 & 0.43 & \textbf{0.66} \\
+
+\midrule
+\multirow{2}{*}{\textsc{EurekaRebus}} & eureka\_hints & accuracy & 0.00 & 0.00 & 0.07 & \textbf{0.32} \\
+ & eureka\_original & accuracy & 0.00 & 0.00 & 0.10 & \textbf{0.36} \\
+
+\midrule
+\multirow{2}{*}{GATTINA} & ansa & sbert\_score & 0.07 & 0.17 & 0.33 & \textbf{0.59} \\
+ & galileo & sbert\_score & 0.21 & 0.21 & 0.22 & \textbf{0.26} \\
+
+\midrule
+\multirow{5}{*}{GEESE} & anon\_anita & accuracy & 0.57 & 0.83 & 0.66 & \textbf{0.89} \\
+ & anon\_dummy & accuracy & 0.49 & 0.54 & 0.49 & \textbf{0.61} \\
+ & anon\_gold & accuracy & 0.58 & 0.71 & 0.62 & \textbf{0.82} \\
+ & anon\_llama & accuracy & 0.57 & 0.79 & 0.60 & \textbf{0.86} \\
+ & noexp & accuracy & 0.49 & 0.47 & 0.50 & \textbf{0.57} \\
+
+\midrule
+\multirow{4}{*}{GFG} & task\_1\_1 & bert\_f1 & 0.49 & 0.55 & 0.66 & \textbf{0.59} \\
+ & task\_1\_2 & bert\_f1 & 0.17 & 0.45 & 0.50 & \textbf{0.53} \\
+ & task\_2\_1 & acc\_gente & 0.53 & 0.51 & 0.18 & \textbf{0.61} \\
+ & task\_2\_2 & cwa & 0.45 & 0.54 & 0.53 & \textbf{0.73} \\
+ & task\_2\_3 & acc\_gente & 0.33 & 0.50 & 0.21 & \textbf{0.54} \\
+ & task\_3\_1 & cwa & 0.28 & 0.35 & 0.42 & \textbf{0.58} \\
+ & task\_3\_2 & acc\_gente & 0.59 & 0.57 & \textbf{0.61} & 0.56 \\
+\midrule
+% \multirow{1}{*}{\textsc{GITA4Calamita}} & conflict\_detect & accuracy & 0.23 & 0.34 & 0.37 & \textbf{0.63} \\
+%  & physical\_state & accuracy & 0.12 & 0.31 & 0.32 & \textbf{0.40} \\
+%  & story\_class & accuracy & 0.33 & \textbf{0.67} & 0.33 & 0.47 \\
+% \midrule
+\multirow{1}{*}{\textsc{GITA4Calamita}} 
+& conflict\_consistency   & accuracy & 0.02 & 0.18 & 0.29 & \textbf{0.65} \\
+& physical\_verifiability & accuracy & 0.00 & 0.08 & 0.14 & \textbf{0.36} \\
+& story\_class\_accuracy  & accuracy & 0.38 & 0.59 & 0.72 & \textbf{0.88} \\
+\midrule
+\multirow{7}{*}{INVALSI} & ita & accuracy & 0.38 & 0.71 & 0.71 & \textbf{0.89} \\
+ & ita\_binarie & accuracy & 0.59 & 0.65 & 0.61 & \textbf{0.74} \\
+ & ita\_multipla & accuracy & 0.35 & 0.72 & 0.73 & \textbf{0.91} \\
+ & mate & accuracy & 0.34 & 0.47 & 0.51 & \textbf{0.72} \\
+ & mate\_multipla & accuracy & 0.30 & 0.41 & 0.45 & \textbf{0.70} \\
+ & mate\_numero & accuracy & 0.27 & 0.54 & 0.59 & \textbf{0.78} \\
+ & mate\_verofalso & accuracy & 0.59 & 0.61 & 0.59 & \textbf{0.65} \\
+
+\midrule
+\multirow{4}{*}{ITA-SENSE} & gen-no-translation & rougeBertScore & 0.26 & 0.26 & \textbf{0.32} & 0.31 \\
+ & gen-with-translation & rougeBertScore & 0.25 & 0.26 & \textbf{0.32} & 0.31 \\ & ml-no-translation & extract\_answer & 0.22 & 0.51 & 0.41 & \textbf{0.63} \\
+ & ml-with-translation & extract\_answer & 0.20 & 0.48 & 0.39 & \textbf{0.58} \\
+
+\midrule
+\multirow{13}{*}{\textsc{ItaEval}} & ami\_2020\_aggressiv. & f1 & 0.44 & 0.48 & \textbf{0.60} & 0.52 \\
+ & ami\_2020\_misogyny & f1 & 0.52 & 0.73 & 0.73 & \textbf{0.85} \\
+% & arc\_challenge\_ita & accuracy & 0.37 & \textbf{0.53} & 0.41 & \textbf{0.53} \\
+% & belebele\_ita & accuracy & 0.42 & 0.84 & 0.86 & \textbf{0.92} \\
+ & gente\_rephrasing & accuracy & 0.26 & 0.35 & 0.31 & \textbf{0.43} \\
+ & haspeede2\_hs & f1 & 0.52 & 0.70 & 0.70 & \textbf{0.73} \\
+ & haspeede2\_stereo & f1 & 0.46 & 0.62 & 0.60 & \textbf{0.67} \\
+ & hatecheck\_ita & f1 & 0.71 & 0.81 & 0.83 & \textbf{0.89} \\
+% & hellaswag\_ita & accuracy & 0.45 & 0.51 & 0.45 & \textbf{0.53} \\
+ & honest\_ita & accuracy & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} \\
+ & ironita\_irony & f1 & 0.42 & 0.69 & 0.67 & \textbf{0.79} \\
+ & ironita\_sarcasm & f1 & 0.42 & 0.46 & 0.52 & \textbf{0.61} \\
+ & itacola & accuracy & 0.74 & 0.69 & 0.82 & \textbf{0.88} \\
+ & news\_sum\_fanpage & rouge1 & 0.29 & 0.30 & \textbf{0.33} & 0.31 \\ & news\_sum\_ilpost & rouge1 & 0.28 & 0.29 & \textbf{0.32} & 0.27 \\ & sentipolc & f1 & 0.44 & 0.50 & 0.49 & \textbf{0.57} \\
+% & squad\_it & squad\_em & 0.00 & 0.53 & 0.65 & \textbf{0.66} \\
+% & truthfulqa\_mc2\_ita & accuracy & 0.41 & \textbf{0.68} & 0.51 & 0.54 \\ 
+% & xcopa\_it & accuracy & 0.74 & 0.74 & 0.72 & \textbf{0.82} \\
+
+\midrule
+\multirow{1}{*}{MACID} & macid & accuracy & 0.27 & 0.43 & 0.43 & \textbf{0.58} \\
+
+\midrule
+\multirow{8}{*}{MAGNET} & en\_it\_public & bleu & 0.28 & 0.25 & 0.27 & \textbf{0.32} \\
+ & IT\_en\_it\_private & bleu & 0.43 & 0.35 & 0.41 & \textbf{0.51} \\
+ & it\_en\_public & bleu & 0.33 & 0.31 & 0.35 & \textbf{0.38} \\
+ & IT\_it\_en\_private & bleu & 0.47 & 0.33 & 0.47 & \textbf{0.53} \\
+ & UK\_en\_it\_private & bleu & 0.42 & 0.31 & 0.40 & \textbf{0.50} \\
+ & UK\_it\_en\_private & bleu & 0.47 & 0.32 & 0.49 & \textbf{0.54} \\
+ & US\_en\_it\_private & bleu & 0.33 & 0.24 & 0.30 & \textbf{0.34} \\
+ & US\_it\_en\_private & bleu & 0.37 & 0.26 & 0.40 & \textbf{0.43} \\
+
+\midrule
+\multirow{2}{*}{MULTI-It} & multi-it-a & accuracy & 0.39 & 0.62 & 0.65 & \textbf{0.84} \\
+ & multi-it-c & accuracy & 0.50 & 0.63 & 0.66 & \textbf{0.81} \\
+
+\midrule
+\multirow{3}{*}{\textsc{PejorativITy}} & misogyny & accuracy & 0.61 & 0.67 & 0.46 & \textbf{0.75} \\
+ & misogyny-context & accuracy & 0.66 & 0.79 & \textbf{0.82} & 0.80 \\ & standard & accuracy & 0.43 & 0.51 & 0.44 & \textbf{0.59} \\
+
+\midrule
+% \multirow{4}{*}{PERSEID} & task\_0 & f1 & 0.22 & 0.32 & 0.50 & \textbf{0.51} \\
+%  & task\_1 & f1 & 0.29 & 0.25 & \textbf{0.50} & \textbf{0.50} \\
+%  & task\_2 & f1 & 0.27 & 0.27 & 0.50 & \textbf{0.51} \\
+%  & task\_3 & f1 & 0.31 & 0.20 & \textbf{0.50} & \textbf{0.50} \\
+\multirow{4}{*}{PERSEID} 
+ & task\_0 & f1 & 0.32 & 0.34 & 0.49 & \textbf{0.50} \\
+ & task\_1 & f1 & 0.38 & 0.29 & 0.50 & \textbf{0.50} \\
+ & task\_2 & f1 & 0.35 & 0.31 & 0.50 & \textbf{0.50} \\
+ & task\_3 & f1 & 0.39 & 0.23 & 0.50 & \textbf{0.49} \\
+
+\midrule
+\multirow{1}{*}{TERMite} & ita-text-to-sql & exec\_accuracy & 0.04 & 0.38 & 0.36 & \textbf{0.46} \\
+
+\midrule
+\multirow{1}{*}{\textsc{TRACE-it}} & traceIT & accuracy & 0.63 & 0.70 & 0.72 & \textbf{0.85} \\
+
+\midrule
+\multirow{3}{*}{VERYf-IT} & enriched & accuracy & \textbf{0.57} & 0.43 & 0.52 & 0.56 \\
+ & full & accuracy & \textbf{0.59} & 0.41 & 0.52 & \textbf{0.59} \\
+ & small & accuracy & \textbf{0.57} & 0.43 & 0.52 & 0.56 \\
+ \bottomrule
+\label{tab:full-results}
+\end{longtable}
+\end{footnotesize}
