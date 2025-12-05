@@ -15,7 +15,7 @@
 |---|---|
 | <img src="img/news.gif" height="75" width="75"> | **News:** The Calamita's [leaderboard](results/README.md) is public! |
 | <img src="img/wip.svg" height="75" width="75"> | We are still working on the official Calamita's website, stay tuned! |
-| <img src="img/paper.gif" height="75" width="75"> | The paper is available on ArXiv |
+| <img src="img/paper.gif" height="75" width="75"> | The paper is available on [ArXiv](https://arxiv.org/abs/2512.04759) |
 
 
 <br>
